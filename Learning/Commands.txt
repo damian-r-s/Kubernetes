@@ -21,3 +21,5 @@ kubectl create namespace lfs158
 kubectl create -f Signing-Request.yaml
 
 kubectl -n kube-system describe pod kube-apiserver-minikube | grep -i admission
+
+kubectl run pod-hello --image=pbitty/hello-from:latest --port=80 --expose=true
